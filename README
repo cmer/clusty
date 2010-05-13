@@ -1,0 +1,27 @@
+Clusty
+by Carl Mercier
+
+-- Preliminary Release --
+
+Easily start instances on EC2. See "config.rb" for configuration examples.
+
+Syntax:
+
+$ ./clusty-start {count} {cluster name} {instance name}
+
+For example, start 1 database server like this:
+
+$ ./clusty-start 1 cluster1 db
+
+or start 10 web servers:
+
+$ ./clusty-start 10 cluster1 web
+
+
+Features:
+
+  - Supports On Demand and Spot instances
+  - Specify maximum Spot instance bid price
+  - Supports user data
+  
+  
